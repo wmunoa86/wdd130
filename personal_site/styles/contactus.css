@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Source+Sans+3&display=swap');
+
+#content{
+}
+
+nav a, #hero-msg h1, #hero-msg h4,.button-box, main, section{
+    text-align: center;
+}
+
+body {
+    background-color: #F5FDFE; 
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F5FDFE;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+.logo{
+    width: 80px;
+}
+
+#logo_link{
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    background-color: #393536;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    padding: 35px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: white;
+}
+
+
+nav a:hover {
+    color: #E9B708;
+}
+
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -200px;
+    margin-bottom: 0;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img{
+    width: 100%;
+}
+
+#hero-msg{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    color: #393536;
+    margin-top: 300px;
+    padding-left: 100px;
+}
+
+.home-title {
+    font-size: 2em;
+    color: #E9B708;
+    background-color: #393536;
+}
+
+#hero-msg h4 { 
+    margin-bottom: 50px;
+    font-family: "Source Sans 3", sans-serif;
+    background-color: #E9B708;
+    color: #393536;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.contact-banner{
+    grid-column: 1/11;
+    grid-row: 2/3;
+    background-color: #393536;
+    color: white;
+    text-align: center;
+}
+
+.back {
+    height: fit-content;
+    grid-column: 1/11;
+    grid-row: 4/5;
+}
+
+.card-img {
+    width: 100%;
+    grid-column: 2/5;
+    grid-row: 4/5;
+    margin-top: 20px;
+}
+
+.form-container{
+    grid-column: 5/10;
+    grid-row: 4/5;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    margin-top: 20px;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+form li + li {
+    margin-top: 1em;
+}
+  
+label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+  
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+}
+  
+input:focus, textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+}
+  
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+}
+  
+.button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+}
+  
+.button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+
+.moveDown {
+    margin-top: 3em;
+}
+
+#background{
+    margin-top: 50px;
+    height: 200px;
+    grid-column: 2/10;
+    grid-row: 7/8;
+    background-color: #393536;
+}
+
+.msg{
+    line-height: 1.5em;
+    grid-column: 2/5;
+    grid-row: 7/8;
+    padding-top: 40px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.msg h2{
+    color: #E9B708;
+}
+
+.msg2{
+    grid-column: 6/10;
+    grid-row: 7/8;
+    padding-top: 40px;
+    padding-right: 50px;
+}
+.msg2 p{
+    font-size: 1em;
+    padding-top: 20px;
+    margin: 0;
+    color: white;
+    text-align: right;
+}
+
+footer{
+    background-color: #393536;
+    color: #F5FDFE;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer:hover{
+    color: #E9B708;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+footer p a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
