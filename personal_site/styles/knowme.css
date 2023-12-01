@@ -156,6 +156,12 @@ nav a:hover {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+.card-img2:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
 .msg2{
     text-align: center;
     line-height: 1.5em;
@@ -187,8 +193,11 @@ p{
 }
 
 .card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
+    /*opacity: .6;
+    transform: scale(1.1);*/
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
 }
 
 .book, .join{
